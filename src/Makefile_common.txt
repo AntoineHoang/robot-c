@@ -1,0 +1,206 @@
+
+##-----------------------------------------------------------------------##
+#
+# 	Titre: Makefile principal.
+# 
+#	Auteurs: Bartholomew Chwalek
+#
+#
+#	Description:
+#
+#
+##-----------------------------------------------------------------------##
+
+##------------------------Definitions globales---------------------------##
+
+##------------------------Variables--------------------------------------##
+NOMPROJET = Projet Robot inf1995
+AUTEURS = 
+DL = -------------
+LIBRAIRIE = ATMega16
+REPERTOIRELIBRAIRIE =$(ROOTDIR)lib
+
+##------------------------Executables------------------------------------##
+CC=avr-gcc
+OBJCOPY=avr-objcopy
+OBJDUMP=avr-objdump
+SIZE=avr-size
+AVRDUDE=avrdude
+REMOVE=rm -f
+ASMOPTIONS= --statistics,#terminez avec une virgule sans espace.
+
+##----------------------- Inclusions additionnelles (repertoire)---------##
+INC= -I$(REPERTOIRELIBRAIRIE)
+
+##----------------------- Libraries--------------------------------------##
+LIBS= -L$(REPERTOIRELIBRAIRIE) -l$(LIBRAIRIE)
+
+##----------------------- Niveau d'optimisation--------------------------##
+# s 1, 2, 3 ou 0 (off)
+OPTLEVEL=s
+
+
+##----------------------- INFORMATIONS MICROCONTROLLEUR -----------------##
+MCU = atmega16
+
+##----------------------- INFORMATIONS AVRDUDE	-------------------------##
+AVRDUDE_PROGRAMMERID=usbasp
+AVRDUDE_PORT=/dev/ttyS0
+
+
+# format du fichier hexadecimal en sortie pour programmation, ihex = intel hex.
+HEXFORMAT=ihex
+
+##------------------------ Configuration Compilateur---------------------##
+
+# ========= Flags du compilateur avr-gcc.
+
+CFLAGS=-I. $(INC) -g -mmcu=$(MCU) -O$(OPTLEVEL) \
+	-fpack-struct -fshort-enums             \
+	-funsigned-bitfields -funsigned-char    \
+	-Wall                                        \
+	-Wa,$(ASMOPTIONS)-ahlms=$(firstword                  \
+	$(filter %.lst, $(<:.c=.lst)))
+
+# ========= Flags specifiques pour c++.
+
+CPPFLAGS=-fno-exceptions -std=c++98    \
+	-Wa,$(ASMOPTIONS)-ahlms=$(firstword         \
+	$(filter %.lst, $(<:.cpp=.lst)))\
+	$(DEFS) 
+	
+
+# ========= Flags pour le linker.
+
+LDFLAGS=-Wl,-Map,$(TRG).map -mmcu=$(MCU)
+
+
+
+##------------------------NOMS des CIBLES ------------------------------##
+
+TRG=$(PROJECTNAME).out
+DUMPTRG=$(PROJECTNAME).s
+
+HEXROMTRG=$(PROJECTNAME).hex
+HEXTRG=$(HEXROMTRG) $(PROJECTNAME).ee.hex
+
+
+# ========= Fichiers sources par type.
+
+CPPFILES=$(filter %.cpp, $(PRJSRC))
+HFILES=$(filter %.h, $(PRJSRC))
+
+# ========= Liste des Makefiles.
+
+MAKEFILES= Makefile Makefile_common.txt ATMega16Defs
+
+# ========= Liste des objets a creer.
+
+OBJDEPS=$(CPPFILES:.cpp=.o)\
+
+
+# ========= Fichiers LST.
+
+LST=$(filter %.lst, $(OBJDEPS:.o=.lst))
+
+# ========= AUTRES.
+
+.SUFFIXES : .c .cc .cpp .C .o .out .s .S \
+	.hex .ee.hex .h .hh .hpp
+
+
+.PHONY: writeflash clean stats gdbinit stats
+
+
+##-------------------------LES CIBLES------------------------------------##
+
+
+all: $(TRG)
+	-@echo  $(DL) Makefile principal.
+	-@echo	$(DL) Projet: $(NOMPROJET)
+	-@echo "TARGET ======== $@"
+	-@echo "Toutes les   sources = $(PRJSRC)"
+	-@echo "Nouvelles    sources = $?"
+	-@echo "Tous les     objets  = $(OBJDEPS)"
+
+clean:
+	$(REMOVE) $(TRG) $(TRG).map $(DUMPTRG)
+	$(REMOVE) $(OBJDEPS)
+	$(REMOVE) $(LST) $(GDBINITFILE)
+	$(REMOVE) $(GENASMFILES)
+	$(REMOVE) $(HEXTRG)
+	$(REMOVE) *~
+
+
+edit:
+	kate $(CPPFILES) $(HFILES) $(MAKEFILES) &
+
+access:
+	sudo chmod 777 *
+	-@echo Les fichiers sont accessibles maintenant.
+	ls -la
+
+symbols:
+	-@echo Table des symboles de $(TRG)
+	objdump -t $(TRG) 
+
+sfind:
+	objdump -t $(TRG) | grep $(F)
+
+lib: 
+	-@echo Compilation de la librairie.
+	make -C $(ROOTDIR)lib
+
+libedit: 
+	-@echo Edition de la librairie.
+	make -C $(ROOTDIR)lib edit
+
+libclean: 
+	-@echo Nettoyage de la librairie.
+	make -C $(ROOTDIR)lib clean
+	
+disasm: $(DUMPTRG) stats
+
+stats: $(TRG)
+	$(OBJDUMP) -h $(TRG)
+	$(SIZE) $(TRG)
+
+hex: $(HEXROMTRG)
+
+
+writeflash: hex
+	$(AVRDUDE) -c $(AVRDUDE_PROGRAMMERID)   \
+	 -p $(MCU) -P $(AVRDUDE_PORT) -e        \
+	 -U flash:w:$(HEXROMTRG)
+
+install: writeflash
+
+$(DUMPTRG): $(TRG)
+	$(OBJDUMP) -S  $< > $@
+
+
+$(TRG): $(OBJDEPS)
+	$(CC) $(LDFLAGS) -o $(TRG) $(OBJDEPS) \
+	-lm $(LIBS)
+
+
+
+# =========  OBJETS DE C++ (.cc, .cpp)
+.cpp.o :
+	$(CC) $(CFLAGS) $(CPPFLAGS) -c $<
+
+
+# ========= GENERATION DES HEX pour ATMega16.
+
+.out.hex:
+	$(OBJCOPY) -j .text                    \
+		-j .data                       \
+		-O $(HEXFORMAT) $< $@
+
+.out.ee.hex:
+	$(OBJCOPY) -j .eeprom                  \
+		--change-section-lma .eeprom=0 \
+		-O $(HEXFORMAT) $< $@
+
+
+

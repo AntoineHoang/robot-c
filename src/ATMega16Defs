@@ -1,0 +1,12 @@
+
+#
+# Definitions globales concernant le ATMega16 et le board.
+#
+
+#Frequence du CPU, 8000000 Hz ici.
+F_CPU = 8000000
+
+#Port pour les diodes electroluminescentes.
+DELPORT = PORTB
+
+DEFS = -DF_CPU=$(F_CPU)UL -DDELPORT=$(DELPORT)

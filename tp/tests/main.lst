@@ -1,0 +1,1011 @@
+GAS LISTING /tmp/ccezdhH7.s 			page 1
+
+
+   1               		.file	"main.cpp"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.global __do_copy_data
+   8               		.global __do_clear_bss
+   9               		.stabs	"/usagers/bachw/Documents/inf1995-0948/codeCommun/tp/tests/",100,0,4,.Ltext0
+  10               		.stabs	"main.cpp",100,0,4,.Ltext0
+  11               		.text
+  12               	.Ltext0:
+  13               		.stabs	"gcc2_compiled.",60,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,1)=*(0,2)=(0,2)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,3)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,4)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,5)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,6)=s4real:(0,7)=r(0,7);-32768;32767;,0,16;imag:(0,7),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,8)=@s64;r(0,8);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,9)=@s32;r(0,9);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,10)=r(0,10);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,12)=@s64;r(0,12);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,13)=@s32;r(0,13);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,7)",128,0,0,0
+  26               		.stabs	"signed char:t(0,14)=@s8;r(0,14);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,15)=@s8;r(0,15);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,7)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,9)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,8)",128,0,0,0
+  31               		.stabs	"short int:t(0,16)=r(0,16);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,17)=r(0,17);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,17)",128,0,0,0
+  34               		.stabs	"float:t(0,18)=r(0,7);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,19)=r(0,7);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,20)=r(0,7);4;0;",128,0,0,0
+  37               		.stabs	"void:t(0,2)",128,0,0,0
+  38               		.stabs	"wchar_t:t(0,21)=r(0,21);-32768;32767;",128,0,0,0
+  39               		.stabs	"bool:t(0,22)=@s8;-16;",128,0,0,0
+  40               		.stabs	"__vtbl_ptr_type:t(0,23)=*(0,24)=f(0,7)",128,0,0,0
+  41               		.stabs	"decltype(nullptr):t(0,25)=(0,25)",128,0,0,0
+  42               		.stabs	"int8_t:t(0,26)=(0,14)",128,0,121,0
+  43               		.stabs	"uint8_t:t(0,27)=(0,11)",128,0,122,0
+  44               		.stabs	"int16_t:t(0,28)=(0,7)",128,0,123,0
+  45               		.stabs	"uint16_t:t(0,29)=(0,10)",128,0,124,0
+  46               		.stabs	"int32_t:t(0,30)=(0,13)",128,0,125,0
+  47               		.stabs	"uint32_t:t(0,31)=(0,9)",128,0,126,0
+  48               		.stabs	"int64_t:t(0,32)=(0,12)",128,0,128,0
+  49               		.stabs	"uint64_t:t(0,33)=(0,8)",128,0,129,0
+  50               		.stabs	"intptr_t:t(0,34)=(0,28)",128,0,142,0
+  51               		.stabs	"uintptr_t:t(0,35)=(0,29)",128,0,147,0
+  52               		.stabs	"int_least8_t:t(0,36)=(0,26)",128,0,159,0
+  53               		.stabs	"uint_least8_t:t(0,37)=(0,27)",128,0,164,0
+  54               		.stabs	"int_least16_t:t(0,38)=(0,28)",128,0,169,0
+  55               		.stabs	"uint_least16_t:t(0,39)=(0,29)",128,0,174,0
+  56               		.stabs	"int_least32_t:t(0,40)=(0,30)",128,0,179,0
+  57               		.stabs	"uint_least32_t:t(0,41)=(0,31)",128,0,184,0
+GAS LISTING /tmp/ccezdhH7.s 			page 2
+
+
+  58               		.stabs	"int_least64_t:t(0,42)=(0,32)",128,0,192,0
+  59               		.stabs	"uint_least64_t:t(0,43)=(0,33)",128,0,199,0
+  60               		.stabs	"int_fast8_t:t(0,44)=(0,26)",128,0,213,0
+  61               		.stabs	"uint_fast8_t:t(0,45)=(0,27)",128,0,218,0
+  62               		.stabs	"int_fast16_t:t(0,46)=(0,28)",128,0,223,0
+  63               		.stabs	"uint_fast16_t:t(0,47)=(0,29)",128,0,228,0
+  64               		.stabs	"int_fast32_t:t(0,48)=(0,30)",128,0,233,0
+  65               		.stabs	"uint_fast32_t:t(0,49)=(0,31)",128,0,238,0
+  66               		.stabs	"int_fast64_t:t(0,50)=(0,32)",128,0,246,0
+  67               		.stabs	"uint_fast64_t:t(0,51)=(0,33)",128,0,253,0
+  68               		.stabs	"intmax_t:t(0,52)=(0,32)",128,0,273,0
+  69               		.stabs	"uintmax_t:t(0,53)=(0,33)",128,0,278,0
+  70               		.stabs	"int_farptr_t:t(0,54)=(0,30)",128,0,77,0
+  71               		.stabs	"uint_farptr_t:t(0,55)=(0,31)",128,0,81,0
+  72               		.stabs	"._0:Tt(0,56)=s2low:(0,11),0,8;high:(0,11),8,8;;",128,0,249,0
+  73               		.stabs	"__fuse_t:t(0,56)",128,0,252,0
+  74               		.stabs	"del:Tt(0,57)=s1delpins:/0(0,27),0,8;__base_ctor ::(0,58)=#(0,57),(0,2),(0,59)=*(0,57),(0,2
+  75               		.stabs	"midi:Tt(0,63)=s18compte2:/0(0,64)=B(0,29),0,16;pins:/0(0,27),16,8;noteMask:/0(0,27),24,8;p
+  76               		.stabs	"DetecteurLigne:Tt(0,73)=s11port:/0(0,65),0,16;ddr:/0(0,65),16,16;leftSensor:/0(0,27),32,8;
+  77               		.stabs	"._1:t(0,78)=@s8;eAucuneLigne:0,LigneGauche:1,LigneCentre:2,LigneGaucheCentre:3,LigneDroite
+  78               		.stabs	"_Z6setBitPVhh:F(0,2)",36,0,64,_Z6setBitPVhh
+  79               		.stabs	"port:P(0,65)",64,0,64,30
+  80               		.stabs	"n:P(0,27)",64,0,64,22
+  81               	.global	_Z6setBitPVhh
+  82               		.type	_Z6setBitPVhh, @function
+  83               	_Z6setBitPVhh:
+  84               		.stabd	46,0,0
+   0:main.cpp      **** #include <avr/io.h>
+   1:main.cpp      **** #include <util/delay.h>
+   2:main.cpp      **** #include <avr/signal.h>
+   3:main.cpp      **** #include <avr/interrupt.h>
+   4:main.cpp      **** #include "del.h"
+   5:main.cpp      **** #include "midi.h"
+   6:main.cpp      **** #include "FonctionGlobales.h"
+   7:main.cpp      **** #include "detecteurligne.h"
+   8:main.cpp      **** #define PINS12 0
+   9:main.cpp      **** #define PINS34 1
+  10:main.cpp      **** #define PINS56 2
+  11:main.cpp      **** #define PINS78 3
+  12:main.cpp      **** 
+  13:main.cpp      **** #define B3 0
+  14:main.cpp      **** #define C3 1
+  15:main.cpp      **** #define Cd3 2
+  16:main.cpp      **** #define D3 3
+  17:main.cpp      **** #define Dd3 4
+  18:main.cpp      **** #define E3 5
+  19:main.cpp      **** #define F3 6
+  20:main.cpp      **** #define Fd3 7
+  21:main.cpp      **** #define G3 8 
+  22:main.cpp      **** #define Gd3 9
+  23:main.cpp      **** #define A4 10
+  24:main.cpp      **** #define Ad4 11
+  25:main.cpp      **** #define B4 12
+  26:main.cpp      **** #define C4 13
+  27:main.cpp      **** #define Cd4 14
+  28:main.cpp      **** #define D4 15
+  29:main.cpp      **** #define Dd4 16
+GAS LISTING /tmp/ccezdhH7.s 			page 3
+
+
+  30:main.cpp      **** #define E4 17
+  31:main.cpp      **** #define F4 18
+  32:main.cpp      **** #define Fd4 19
+  33:main.cpp      **** #define G4 20
+  34:main.cpp      **** #define Gd4 21
+  35:main.cpp      **** #define A5 22
+  36:main.cpp      **** #define Ad5 23
+  37:main.cpp      **** #define B5 24
+  38:main.cpp      **** #define C5 25
+  39:main.cpp      **** #define Cd5 26
+  40:main.cpp      **** #define D5 27
+  41:main.cpp      **** #define Dd5 28
+  42:main.cpp      **** #define E5 29
+  43:main.cpp      **** #define F5 30
+  44:main.cpp      **** #define Fd5 31
+  45:main.cpp      **** #define G5 32
+  46:main.cpp      **** #define Gd5 33
+  47:main.cpp      **** #define A6 34
+  48:main.cpp      **** #define SIL 35
+  49:main.cpp      **** 
+  50:main.cpp      **** 
+  51:main.cpp      **** 
+  52:main.cpp      **** 
+  53:main.cpp      **** 
+  54:main.cpp      **** 
+  55:main.cpp      **** #define setOCR1A 0b00100000
+  56:main.cpp      **** #define setOCR1B 0b00010000
+  57:main.cpp      **** #define nOCR1A 0b11011111
+  58:main.cpp      **** #define nOCR1B 0b11101111
+  59:main.cpp      **** 
+  60:main.cpp      **** #define setBitM(port, n) ((port) |= (1<<(n)))
+  61:main.cpp      **** #define unsetBitM(port, n) ((port) &= (0xff<<(n))+(0xff>>((n)+1)))
+  62:main.cpp      **** 
+  63:main.cpp      **** void setBit(volatile uint8_t* port, uint8_t n){ *port|=(1<<n);}
+  85               		.stabn	68,0,64,.LM0-.LFBB1
+  86               	.LM0:
+  87               	.LFBB1:
+  88               	/* prologue: function */
+  89               	/* frame size = 0 */
+  90               	/* stack size = 0 */
+  91               	.L__stack_usage = 0
+  92 0000 FC01      		movw r30,r24
+  93               		.stabn	68,0,64,.LM1-.LFBB1
+  94               	.LM1:
+  95 0002 2081      		ld r18,Z
+  96 0004 81E0      		ldi r24,lo8(1)
+  97 0006 90E0      		ldi r25,hi8(1)
+  98 0008 00C0      		rjmp 2f
+  99 000a 880F      	1:	lsl r24
+ 100 000c 991F      		rol r25
+ 101 000e 6A95      	2:	dec r22
+ 102 0010 02F4      		brpl 1b
+ 103 0012 282B      		or r18,r24
+ 104 0014 2083      		st Z,r18
+ 105               	/* epilogue start */
+ 106 0016 0895      		ret
+ 107               		.size	_Z6setBitPVhh, .-_Z6setBitPVhh
+GAS LISTING /tmp/ccezdhH7.s 			page 4
+
+
+ 108               	.Lscope1:
+ 109               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 110               		.stabd	78,0,0
+ 111               		.stabs	"_Z8unsetBitPVhh:F(0,2)",36,0,65,_Z8unsetBitPVhh
+ 112               		.stabs	"port:P(0,65)",64,0,65,30
+ 113               		.stabs	"n:P(0,27)",64,0,65,22
+ 114               	.global	_Z8unsetBitPVhh
+ 115               		.type	_Z8unsetBitPVhh, @function
+ 116               	_Z8unsetBitPVhh:
+ 117               		.stabd	46,0,0
+  64:main.cpp      **** void unsetBit(volatile uint8_t* port,uint8_t n){ *port&=(0xFF<<n)+(0xFF>>(n+1));};
+ 118               		.stabn	68,0,65,.LM2-.LFBB2
+ 119               	.LM2:
+ 120               	.LFBB2:
+ 121               	/* prologue: function */
+ 122               	/* frame size = 0 */
+ 123               	/* stack size = 0 */
+ 124               	.L__stack_usage = 0
+ 125 0018 FC01      		movw r30,r24
+ 126               		.stabn	68,0,65,.LM3-.LFBB2
+ 127               	.LM3:
+ 128 001a 4081      		ld r20,Z
+ 129 001c 262F      		mov r18,r22
+ 130 001e 30E0      		ldi r19,lo8(0)
+ 131 0020 2F5F      		subi r18,lo8(-(1))
+ 132 0022 3F4F      		sbci r19,hi8(-(1))
+ 133 0024 8FEF      		ldi r24,lo8(255)
+ 134 0026 90E0      		ldi r25,hi8(255)
+ 135 0028 DC01      		movw r26,r24
+ 136 002a 00C0      		rjmp 2f
+ 137 002c B595      	1:	asr r27
+ 138 002e A795      		ror r26
+ 139 0030 2A95      	2:	dec r18
+ 140 0032 02F4      		brpl 1b
+ 141 0034 00C0      		rjmp 2f
+ 142 0036 880F      	1:	lsl r24
+ 143 0038 991F      		rol r25
+ 144 003a 6A95      	2:	dec r22
+ 145 003c 02F4      		brpl 1b
+ 146 003e 8A0F      		add r24,r26
+ 147 0040 8423      		and r24,r20
+ 148 0042 8083      		st Z,r24
+ 149               	/* epilogue start */
+ 150 0044 0895      		ret
+ 151               		.size	_Z8unsetBitPVhh, .-_Z8unsetBitPVhh
+ 152               	.Lscope2:
+ 153               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 154               		.stabd	78,0,0
+ 155               		.stabs	"_Z11initialiserv:F(0,2)",36,0,72,_Z11initialiserv
+ 156               	.global	_Z11initialiserv
+ 157               		.type	_Z11initialiserv, @function
+ 158               	_Z11initialiserv:
+ 159               		.stabd	46,0,0
+  65:main.cpp      ****   
+  66:main.cpp      **** enum  {AucuneLigne=0, LigneGauche=1, LigneCentre=2, LigneGaucheCentre=3, LigneDroite, LigneDroiteGa
+  67:main.cpp      **** 
+  68:main.cpp      **** 
+GAS LISTING /tmp/ccezdhH7.s 			page 5
+
+
+  69:main.cpp      **** 
+  70:main.cpp      **** 
+  71:main.cpp      **** void initialiser(void) {
+ 160               		.stabn	68,0,72,.LM4-.LFBB3
+ 161               	.LM4:
+ 162               	.LFBB3:
+ 163               	/* prologue: function */
+ 164               	/* frame size = 0 */
+ 165               	/* stack size = 0 */
+ 166               	.L__stack_usage = 0
+  72:main.cpp      **** 
+  73:main.cpp      ****   DDRB = 0xff; 			// PORT B est en mode sortie. (Pour la DEL).
+ 167               		.stabn	68,0,74,.LM5-.LFBB3
+ 168               	.LM5:
+ 169 0046 2FEF      		ldi r18,lo8(-1)
+ 170 0048 27BB      		out 55-0x20,r18
+  74:main.cpp      ****   //DDRD = 0x00; 			// PORT D est en mode entrée. (Pas utilise ici).
+  75:main.cpp      ****   DDRD |= setOCR1A;
+ 171               		.stabn	68,0,76,.LM6-.LFBB3
+ 172               	.LM6:
+ 173 004a 8D9A      		sbi 49-0x20,5
+  76:main.cpp      ****   sei();
+ 174               		.stabn	68,0,77,.LM7-.LFBB3
+ 175               	.LM7:
+ 176               	/* #APP */
+ 177               	 ;  77 "main.cpp" 1
+ 178 004c 7894      		sei
+ 179               	 ;  0 "" 2
+  77:main.cpp      ****   
+  78:main.cpp      ****   
+  79:main.cpp      ****   
+  80:main.cpp      ****   TCCR1A = (1<<COM1A1)|(1<<COM1B1)|(1<<WGM10);	// COM1A1 pour comparaison sur OC1A
+ 180               		.stabn	68,0,81,.LM8-.LFBB3
+ 181               	.LM8:
+ 182               	/* #NOAPP */
+ 183 004e 81EA      		ldi r24,lo8(-95)
+ 184 0050 8FBD      		out 79-0x20,r24
+  81:main.cpp      **** 
+  82:main.cpp      **** 						// WGM 13-10 = 0001 pour PWM 1 ( 12 et 13 sur B et 10 et 11 sur A)
+  83:main.cpp      **** 
+  84:main.cpp      ****   TCCR1B = (1<<CS11);	 			// CS 12-10 = 010 pour clk/8
+ 185               		.stabn	68,0,85,.LM9-.LFBB3
+ 186               	.LM9:
+ 187 0052 82E0      		ldi r24,lo8(2)
+ 188 0054 8EBD      		out 78-0x20,r24
+  85:main.cpp      **** 
+  86:main.cpp      ****   TCNT1 = 1;
+ 189               		.stabn	68,0,87,.LM10-.LFBB3
+ 190               	.LM10:
+ 191 0056 81E0      		ldi r24,lo8(1)
+ 192 0058 90E0      		ldi r25,hi8(1)
+ 193 005a 9DBD      		out 76+1-0x20,r25
+ 194 005c 8CBD      		out 76-0x20,r24
+  87:main.cpp      **** 
+  88:main.cpp      **** 
+  89:main.cpp      ****   DDRD = 0xff;					//PORT D est en sortie
+ 195               		.stabn	68,0,90,.LM11-.LFBB3
+GAS LISTING /tmp/ccezdhH7.s 			page 6
+
+
+ 196               	.LM11:
+ 197 005e 21BB      		out 49-0x20,r18
+  90:main.cpp      ****   
+  91:main.cpp      ****   DDRB =  0xff;					//PORT B est en sortie
+ 198               		.stabn	68,0,92,.LM12-.LFBB3
+ 199               	.LM12:
+ 200 0060 27BB      		out 55-0x20,r18
+ 201               	/* epilogue start */
+  92:main.cpp      ****   
+  93:main.cpp      **** 
+  94:main.cpp      **** }
+ 202               		.stabn	68,0,95,.LM13-.LFBB3
+ 203               	.LM13:
+ 204 0062 0895      		ret
+ 205               		.size	_Z11initialiserv, .-_Z11initialiserv
+ 206               	.Lscope3:
+ 207               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 208               		.stabd	78,0,0
+ 209               		.stabs	"__vector_19:F(0,2)",36,0,98,__vector_19
+ 210               	.global	__vector_19
+ 211               		.type	__vector_19, @function
+ 212               	__vector_19:
+ 213               		.stabd	46,0,0
+  95:main.cpp      **** 
+  96:main.cpp      **** 
+  97:main.cpp      **** ISR(TIMER0_COMP_vect) {
+ 214               		.stabn	68,0,98,.LM14-.LFBB4
+ 215               	.LM14:
+ 216               	.LFBB4:
+ 217 0064 1F92      		push r1
+ 218 0066 0F92      		push r0
+ 219 0068 0FB6      		in r0,__SREG__
+ 220 006a 0F92      		push r0
+ 221 006c 1124      		clr __zero_reg__
+ 222               	/* prologue: Signal */
+ 223               	/* frame size = 0 */
+ 224               	/* stack size = 3 */
+ 225               	.L__stack_usage = 3
+ 226               	/* epilogue start */
+  98:main.cpp      **** 
+  99:main.cpp      **** }
+ 227               		.stabn	68,0,100,.LM15-.LFBB4
+ 228               	.LM15:
+ 229 006e 0F90      		pop r0
+ 230 0070 0FBE      		out __SREG__,r0
+ 231 0072 0F90      		pop r0
+ 232 0074 1F90      		pop r1
+ 233 0076 1895      		reti
+ 234               		.size	__vector_19, .-__vector_19
+ 235               	.Lscope4:
+ 236               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 237               		.stabd	78,0,0
+ 238               		.stabs	"__vector_6:F(0,2)",36,0,103,__vector_6
+ 239               	.global	__vector_6
+ 240               		.type	__vector_6, @function
+ 241               	__vector_6:
+ 242               		.stabd	46,0,0
+GAS LISTING /tmp/ccezdhH7.s 			page 7
+
+
+ 100:main.cpp      **** 
+ 101:main.cpp      **** 
+ 102:main.cpp      **** ISR(TIMER1_COMPA_vect) {
+ 243               		.stabn	68,0,103,.LM16-.LFBB5
+ 244               	.LM16:
+ 245               	.LFBB5:
+ 246 0078 1F92      		push r1
+ 247 007a 0F92      		push r0
+ 248 007c 0FB6      		in r0,__SREG__
+ 249 007e 0F92      		push r0
+ 250 0080 1124      		clr __zero_reg__
+ 251               	/* prologue: Signal */
+ 252               	/* frame size = 0 */
+ 253               	/* stack size = 3 */
+ 254               	.L__stack_usage = 3
+ 255               	/* epilogue start */
+ 103:main.cpp      **** 
+ 104:main.cpp      ****   
+ 105:main.cpp      **** }
+ 256               		.stabn	68,0,106,.LM17-.LFBB5
+ 257               	.LM17:
+ 258 0082 0F90      		pop r0
+ 259 0084 0FBE      		out __SREG__,r0
+ 260 0086 0F90      		pop r0
+ 261 0088 1F90      		pop r1
+ 262 008a 1895      		reti
+ 263               		.size	__vector_6, .-__vector_6
+ 264               	.Lscope5:
+ 265               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 266               		.stabd	78,0,0
+ 267               		.section	.text.startup,"ax",@progbits
+ 268               		.stabs	"main:F(0,7)",36,0,108,main
+ 269               	.global	main
+ 270               		.type	main, @function
+ 271               	main:
+ 272               		.stabd	46,0,0
+ 106:main.cpp      **** 
+ 107:main.cpp      **** int main() 
+ 108:main.cpp      **** {
+ 273               		.stabn	68,0,109,.LM18-.LFBB6
+ 274               	.LM18:
+ 275               	.LFBB6:
+ 276 0000 CF93      		push r28
+ 277 0002 DF93      		push r29
+ 278 0004 CDB7      		in r28,__SP_L__
+ 279 0006 DEB7      		in r29,__SP_H__
+ 280 0008 2C97      		sbiw r28,12
+ 281 000a 0FB6      		in __tmp_reg__,__SREG__
+ 282 000c F894      		cli
+ 283 000e DEBF      		out __SP_H__,r29
+ 284 0010 0FBE      		out __SREG__,__tmp_reg__
+ 285 0012 CDBF      		out __SP_L__,r28
+ 286               	/* prologue: function */
+ 287               	/* frame size = 12 */
+ 288               	/* stack size = 14 */
+ 289               	.L__stack_usage = 14
+ 290               	.LBB18:
+GAS LISTING /tmp/ccezdhH7.s 			page 8
+
+
+ 109:main.cpp      ****   initialiser();
+ 291               		.stabn	68,0,110,.LM19-.LFBB6
+ 292               	.LM19:
+ 293 0014 0E94 0000 		call _Z11initialiserv
+ 294               	.LBB19:
+ 295               	.LBB20:
+ 296               		.stabs	"../../lib/del.h",132,0,0,.Ltext1
+ 297               	.Ltext1:
+   0:../../lib/del.h **** 
+   1:../../lib/del.h **** #ifndef DEL_H
+   2:../../lib/del.h **** #define DEL_H
+   3:../../lib/del.h **** #include <avr/io.h> 
+   4:../../lib/del.h **** 
+   5:../../lib/del.h **** class del 
+   6:../../lib/del.h **** 
+   7:../../lib/del.h **** {
+   8:../../lib/del.h ****   
+   9:../../lib/del.h **** public:
+  10:../../lib/del.h **** 
+  11:../../lib/del.h ****   del(uint8_t delN) {delpins=delN;};
+ 298               		.stabn	68,0,12,.LM20-.LFBB6
+ 299               	.LM20:
+ 300 0018 1982      		std Y+1,__zero_reg__
+ 301               	.LBE20:
+ 302               	.LBE19:
+ 303               		.stabs	"main.cpp",132,0,0,.Ltext2
+ 304               	.Ltext2:
+ 110:main.cpp      ****   del del1(PINS12);
+ 111:main.cpp      ****   DetecteurLigne detecteurligne(&PINA, &DDRA, 1,3,5);
+ 305               		.stabn	68,0,112,.LM21-.LFBB6
+ 306               	.LM21:
+ 307 001a 82E0      		ldi r24,lo8(2)
+ 308 001c C82E      		mov r12,r24
+ 309 001e D12C      		mov r13,__zero_reg__
+ 310 0020 CC0E      		add r12,r28
+ 311 0022 DD1E      		adc r13,r29
+ 312 0024 C601      		movw r24,r12
+ 313 0026 69E3      		ldi r22,lo8(57)
+ 314 0028 70E0      		ldi r23,hi8(57)
+ 315 002a 4AE3      		ldi r20,lo8(58)
+ 316 002c 50E0      		ldi r21,hi8(58)
+ 317 002e 21E0      		ldi r18,lo8(1)
+ 318 0030 03E0      		ldi r16,lo8(3)
+ 319 0032 35E0      		ldi r19,lo8(5)
+ 320 0034 E32E      		mov r14,r19
+ 321 0036 0E94 0000 		call _ZN14DetecteurLigneC1EPVhS1_hhh
+ 112:main.cpp      **** 
+ 113:main.cpp      ****   do 
+ 114:main.cpp      ****   {
+ 115:main.cpp      ****     
+ 116:main.cpp      ****   
+ 117:main.cpp      **** //del1.clignoter(10,100);
+ 118:main.cpp      **** //      _delay_ms(1000);
+ 119:main.cpp      **** 
+ 120:main.cpp      ****       
+ 121:main.cpp      ****       switch(detecteurligne.getStatutCourant()) {
+ 322               		.stabn	68,0,122,.LM22-.LFBB6
+GAS LISTING /tmp/ccezdhH7.s 			page 9
+
+
+ 323               	.LM22:
+ 324 003a 1D2D      		mov r17,r13
+ 325               	.LBB21:
+ 326               	.LBB22:
+ 327               	.LBB23:
+ 328               	.LBB24:
+ 329               		.stabs	"/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext3
+ 330               	.Ltext3:
+   0:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   1:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****    Copyright (c) 2007 Joerg Wunsch
+   2:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****    All rights reserved.
+   3:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+   4:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****    Redistribution and use in source and binary forms, with or without
+   5:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****    modification, are permitted provided that the following conditions are met:
+   6:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+   7:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****    * Redistributions of source code must retain the above copyright
+   8:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****      notice, this list of conditions and the following disclaimer.
+   9:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  10:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****    * Redistributions in binary form must reproduce the above copyright
+  11:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****      notice, this list of conditions and the following disclaimer in
+  12:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****      the documentation and/or other materials provided with the
+  13:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****      distribution.
+  14:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  15:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****    * Neither the name of the copyright holders nor the names of
+  16:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****      contributors may be used to endorse or promote products derived
+  17:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****      from this software without specific prior written permission.
+  18:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  19:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  20:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  21:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  22:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  23:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  24:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  25:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  26:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  27:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  28:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  29:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  30:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  31:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** /* $Id: delay_basic.h 2143 2010-06-08 21:19:51Z joerg_wunsch $ */
+  32:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  33:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** #ifndef _UTIL_DELAY_BASIC_H_
+  34:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** #define _UTIL_DELAY_BASIC_H_ 1
+  35:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  36:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** #include <inttypes.h>
+  37:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  38:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** #if !defined(__DOXYGEN__)
+  39:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** static inline void _delay_loop_1(uint8_t __count) __attribute__((always_inline));
+  40:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** static inline void _delay_loop_2(uint16_t __count) __attribute__((always_inline));
+  41:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** #endif
+  42:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  43:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** /** \file */
+  44:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** /** \defgroup util_delay_basic <util/delay_basic.h>: Basic busy-wait delay loops
+  45:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     \code
+  46:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     #include <util/delay_basic.h>
+  47:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     \endcode
+  48:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+GAS LISTING /tmp/ccezdhH7.s 			page 10
+
+
+  49:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     The functions in this header file implement simple delay loops
+  50:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     that perform a busy-waiting.  They are typically used to
+  51:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     facilitate short delays in the program execution.  They are
+  52:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     implemented as count-down loops with a well-known CPU cycle
+  53:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     count per loop iteration.  As such, no other processing can
+  54:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     occur simultaneously.  It should be kept in mind that the
+  55:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     functions described here do not disable interrupts.
+  56:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  57:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     In general, for long delays, the use of hardware timers is
+  58:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     much preferrable, as they free the CPU, and allow for
+  59:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     concurrent processing of other events while the timer is
+  60:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     running.  However, in particular for very short delays, the
+  61:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     overhead of setting up a hardware timer is too much compared
+  62:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     to the overall delay time.
+  63:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  64:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     Two inline functions are provided for the actual delay algorithms.
+  65:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  66:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** */
+  67:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  68:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** /** \ingroup util_delay_basic
+  69:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  70:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     Delay loop using an 8-bit counter \c __count, so up to 256
+  71:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     iterations are possible.  (The value 256 would have to be passed
+  72:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     as 0.)  The loop executes three CPU cycles per iteration, not
+  73:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     including the overhead the compiler needs to setup the counter
+  74:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     register.
+  75:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  76:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     Thus, at a CPU speed of 1 MHz, delays of up to 768 microseconds
+  77:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     can be achieved.
+  78:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** */
+  79:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** void
+  80:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** _delay_loop_1(uint8_t __count)
+  81:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** {
+  82:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 	__asm__ volatile (
+  83:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 		"1: dec %0" "\n\t"
+  84:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 		"brne 1b"
+  85:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 		: "=r" (__count)
+  86:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 		: "0" (__count)
+  87:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 	);
+  88:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** }
+  89:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  90:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** /** \ingroup util_delay_basic
+  91:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  92:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     Delay loop using a 16-bit counter \c __count, so up to 65536
+  93:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     iterations are possible.  (The value 65536 would have to be
+  94:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     passed as 0.)  The loop executes four CPU cycles per iteration,
+  95:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     not including the overhead the compiler requires to setup the
+  96:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     counter register pair.
+  97:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 
+  98:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     Thus, at a CPU speed of 1 MHz, delays of up to about 262.1
+  99:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****     milliseconds can be achieved.
+ 100:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h ****  */
+ 101:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** void
+ 102:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** _delay_loop_2(uint16_t __count)
+ 103:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** {
+ 104:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 	__asm__ volatile (
+ 105:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 		"1: sbiw %0,1" "\n\t"
+GAS LISTING /tmp/ccezdhH7.s 			page 11
+
+
+ 106:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 		"brne 1b"
+ 107:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 		: "=w" (__count)
+ 108:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 		: "0" (__count)
+ 109:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h **** 	);
+ 331               		.stabn	68,0,110,.LM23-.LFBB6
+ 332               	.LM23:
+ 333 003c E8EC      		ldi r30,lo8(200)
+ 334 003e EE2E      		mov r14,r30
+ 335 0040 F12C      		mov r15,__zero_reg__
+ 336               	.L15:
+ 337               	.LBE24:
+ 338               	.LBE23:
+ 339               	.LBE22:
+ 340               	.LBE21:
+ 341               		.stabs	"main.cpp",132,0,0,.Ltext4
+ 342               	.Ltext4:
+ 343               		.stabn	68,0,122,.LM24-.LFBB6
+ 344               	.LM24:
+ 345 0042 8C2D      		mov r24,r12
+ 346 0044 912F      		mov r25,r17
+ 347 0046 0E94 0000 		call _ZN14DetecteurLigne16getStatutCourantEv
+ 348 004a 8330      		cpi r24,lo8(3)
+ 349 004c 01F0      		breq .L11
+ 350 004e 8430      		cpi r24,lo8(4)
+ 351 0050 00F4      		brsh .L13
+ 352 0052 8130      		cpi r24,lo8(1)
+ 353 0054 01F0      		breq .L9
+ 354 0056 8230      		cpi r24,lo8(2)
+ 355 0058 00F4      		brsh .L10
+ 356 005a 00C0      		rjmp .L20
+ 357               	.L13:
+ 358 005c 8430      		cpi r24,lo8(4)
+ 359 005e 01F0      		breq .L12
+ 360 0060 8830      		cpi r24,lo8(8)
+ 361 0062 00F4      		brsh .L7
+ 362 0064 00C0      		rjmp .L11
+ 363               	.L20:
+ 122:main.cpp      **** 	
+ 123:main.cpp      **** 	case(AucuneLigne):
+ 124:main.cpp      **** 	   ajusterPWM(0,0);
+ 364               		.stabn	68,0,125,.LM25-.LFBB6
+ 365               	.LM25:
+ 366 0066 80E0      		ldi r24,lo8(0)
+ 367 0068 60E0      		ldi r22,lo8(0)
+ 368 006a 0E94 0000 		call _Z10ajusterPWMhh
+ 125:main.cpp      **** 	  del1.allumer(0);
+ 369               		.stabn	68,0,126,.LM26-.LFBB6
+ 370               	.LM26:
+ 371 006e CE01      		movw r24,r28
+ 372 0070 0196      		adiw r24,1
+ 373 0072 60E0      		ldi r22,lo8(0)
+ 374 0074 00C0      		rjmp .L18
+ 375               	.L9:
+ 126:main.cpp      **** 	  
+ 127:main.cpp      **** 	  break;
+ 128:main.cpp      **** 	  
+ 129:main.cpp      **** 	  case(LigneGauche):
+GAS LISTING /tmp/ccezdhH7.s 			page 12
+
+
+ 130:main.cpp      **** 	  del1.allumer(1);
+ 376               		.stabn	68,0,131,.LM27-.LFBB6
+ 377               	.LM27:
+ 378 0076 CE01      		movw r24,r28
+ 379 0078 0196      		adiw r24,1
+ 380 007a 61E0      		ldi r22,lo8(1)
+ 381               	.L18:
+ 382 007c 0E94 0000 		call _ZN3del7allumerEh
+ 131:main.cpp      **** 	  break;
+ 383               		.stabn	68,0,132,.LM28-.LFBB6
+ 384               	.LM28:
+ 385 0080 00C0      		rjmp .L11
+ 386               	.L10:
+ 132:main.cpp      **** 	  
+ 133:main.cpp      **** 	  case(LigneCentre):
+ 134:main.cpp      **** 	  PORTD |= 0x0C;     //0000 1100
+ 387               		.stabn	68,0,135,.LM29-.LFBB6
+ 388               	.LM29:
+ 389 0082 82B3      		in r24,50-0x20
+ 390 0084 8C60      		ori r24,lo8(12)
+ 391 0086 82BB      		out 50-0x20,r24
+ 392 0088 00C0      		rjmp .L19
+ 393               	.L12:
+ 135:main.cpp      ****           ajusterPWM(150, 150);
+ 136:main.cpp      **** 	  del1.clignoter(50,2);
+ 137:main.cpp      **** 	  	   
+ 138:main.cpp      **** 	  
+ 139:main.cpp      **** 	  break;
+ 140:main.cpp      **** 	  
+ 141:main.cpp      **** 	  case(LigneGaucheCentre):
+ 142:main.cpp      **** 	
+ 143:main.cpp      **** 	  break;
+ 144:main.cpp      **** 	  
+ 145:main.cpp      **** 	  case(LigneDroite):
+ 146:main.cpp      **** 	      del1.allumer(2);
+ 394               		.stabn	68,0,147,.LM30-.LFBB6
+ 395               	.LM30:
+ 396 008a CE01      		movw r24,r28
+ 397 008c 0196      		adiw r24,1
+ 398 008e 62E0      		ldi r22,lo8(2)
+ 399 0090 0E94 0000 		call _ZN3del7allumerEh
+ 147:main.cpp      **** 	        PORTD = 0x00;     //0000 1100
+ 400               		.stabn	68,0,148,.LM31-.LFBB6
+ 401               	.LM31:
+ 402 0094 12BA      		out 50-0x20,__zero_reg__
+ 403               	.L19:
+ 148:main.cpp      ****           ajusterPWM(150, 150);
+ 404               		.stabn	68,0,149,.LM32-.LFBB6
+ 405               	.LM32:
+ 406 0096 86E9      		ldi r24,lo8(-106)
+ 407 0098 66E9      		ldi r22,lo8(-106)
+ 408 009a 0E94 0000 		call _Z10ajusterPWMhh
+ 149:main.cpp      **** 	  del1.clignoter(50,2);
+ 409               		.stabn	68,0,150,.LM33-.LFBB6
+ 410               	.LM33:
+ 411 009e CE01      		movw r24,r28
+ 412 00a0 0196      		adiw r24,1
+GAS LISTING /tmp/ccezdhH7.s 			page 13
+
+
+ 413 00a2 62E3      		ldi r22,lo8(50)
+ 414 00a4 42E0      		ldi r20,lo8(2)
+ 415 00a6 0E94 0000 		call _ZN3del9clignoterEhh
+ 150:main.cpp      **** 	  break;
+ 416               		.stabn	68,0,151,.LM34-.LFBB6
+ 417               	.LM34:
+ 418 00aa 00C0      		rjmp .L11
+ 419               	.L7:
+ 151:main.cpp      **** 	  
+ 152:main.cpp      **** 	  case(LigneDroiteGauche):
+ 153:main.cpp      **** 	  
+ 154:main.cpp      **** 	  break;
+ 155:main.cpp      **** 	  
+ 156:main.cpp      **** 	  case(LigneDroiteCentre):
+ 157:main.cpp      **** 	  
+ 158:main.cpp      **** 	  break;
+ 159:main.cpp      **** 	  
+ 160:main.cpp      **** 	  case(LignePartout):
+ 161:main.cpp      **** 	
+ 162:main.cpp      **** 	    
+ 163:main.cpp      **** 	    break;
+ 164:main.cpp      **** 	  default:
+ 165:main.cpp      **** 	    ajusterPWM(0,0);
+ 420               		.stabn	68,0,166,.LM35-.LFBB6
+ 421               	.LM35:
+ 422 00ac 80E0      		ldi r24,lo8(0)
+ 423 00ae 60E0      		ldi r22,lo8(0)
+ 424 00b0 0E94 0000 		call _Z10ajusterPWMhh
+ 425               	.L11:
+ 426               	.LBE18:
+ 109:main.cpp      **** {
+ 427               		.stabn	68,0,109,.LM36-.LFBB6
+ 428               	.LM36:
+ 429 00b4 28E8      		ldi r18,lo8(5000)
+ 430 00b6 33E1      		ldi r19,hi8(5000)
+ 431               	.L14:
+ 432               	.LBB29:
+ 433               	.LBB28:
+ 434               	.LBB27:
+ 435               	.LBB26:
+ 436               	.LBB25:
+ 437               		.stabs	"/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h",132,0,0,.Ltext5
+ 438               	.Ltext5:
+ 439               		.stabn	68,0,110,.LM37-.LFBB6
+ 440               	.LM37:
+ 441 00b8 C701      		movw r24,r14
+ 442               	/* #APP */
+ 443               	 ;  110 "/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay_basic.h" 1
+ 444 00ba 0197      		1: sbiw r24,1
+ 445 00bc 01F4      		brne 1b
+ 446               	 ;  0 "" 2
+ 447               	/* #NOAPP */
+ 448 00be 2150      		subi r18,lo8(-(-1))
+ 449 00c0 3040      		sbci r19,hi8(-(-1))
+ 450               	.LBE25:
+ 451               	.LBE26:
+ 452               		.stabs	"/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h",132,0,0,.Ltext6
+GAS LISTING /tmp/ccezdhH7.s 			page 14
+
+
+ 453               	.Ltext6:
+   0:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   1:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   2:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+   3:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    All rights reserved.
+   4:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+   5:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
+   6:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
+   7:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+   8:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
+   9:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
+  10:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  11:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  12:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
+  13:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****      the documentation and/or other materials provided with the
+  14:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****      distribution.
+  15:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  16:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
+  17:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
+  18:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****      from this software without specific prior written permission.
+  19:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  20:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  21:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  22:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  23:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  24:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  25:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  26:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  27:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  28:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  29:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  30:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  31:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  32:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** /* $Id: delay.h.in 2189 2010-10-13 09:39:34Z aboyapati $ */
+  33:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  34:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
+  35:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
+  36:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  37:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #ifndef __HAS_DELAY_CYCLES
+  38:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #define __HAS_DELAY_CYCLES 0
+  39:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #endif
+  40:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  41:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #include <inttypes.h>
+  42:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #include <util/delay_basic.h>
+  43:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  44:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** /** \file */
+  45:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  46:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     \code
+  47:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  48:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
+  49:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     #include <util/delay.h>
+  50:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     \endcode
+  51:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  52:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
+  53:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  54:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
+  55:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     used.
+GAS LISTING /tmp/ccezdhH7.s 			page 15
+
+
+  56:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  57:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
+  58:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+  59:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     convenience functions where actual time values can be specified
+  60:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  61:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
+  62:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
+  63:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  64:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
+  65:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  66:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
+  67:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  68:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
+  69:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
+  70:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
+  71:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
+  72:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
+  73:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     routines linked into the application.
+  74:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  75:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
+  76:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
+  77:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  78:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  79:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** */
+  80:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  81:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
+  82:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** static inline void _delay_us(double __us) __attribute__((always_inline));
+  83:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** static inline void _delay_ms(double __ms) __attribute__((always_inline));
+  84:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #endif
+  85:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  86:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #ifndef F_CPU
+  87:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
+  88:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  89:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** # define F_CPU 1000000UL
+  90:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #endif
+  91:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  92:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #ifndef __OPTIMIZE__
+  93:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+  94:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #endif
+  95:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  96:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** /**
+  97:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    \ingroup util_delay
+  98:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+  99:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 100:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+ 101:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 102:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 103:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+ 104:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 105:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+ 106:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
+ 107:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 108:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 109:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+ 110:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    user will not be informed about decreased resolution.
+ 111:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+ 112:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+GAS LISTING /tmp/ccezdhH7.s 			page 16
+
+
+ 113:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 114:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
+ 115:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    no delay i.e., 0ms.
+ 116:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+ 117:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+ 118:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 119:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
+ 120:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+ 121:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 122:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    to round down and round to closest integer.
+ 123:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+ 124:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    Note: The new implementation of _delay_ms(double __ms) with 
+ 125:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible. 
+ 126:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay
+ 127:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****    although this will be deprecated in future.
+ 128:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+ 129:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h ****  */
+ 130:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** void
+ 131:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** _delay_ms(double __ms)
+ 132:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** {
+ 133:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	uint16_t __ticks;
+ 134:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	double __tmp ; 
+ 135:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && !defined(__DELAY_BACKWARD_COMPATIBLE__)
+ 136:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 137:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 138:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 139:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+ 140:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 141:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 142:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+ 143:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 144:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 145:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+ 146:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	#else
+ 147:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 		//round up by default
+ 148:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 149:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	#endif
+ 150:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+ 151:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 152:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 
+ 153:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** #elif !__HAS_DELAY_CYCLES || (__HAS_DELAY_CYCLES && !defined(__OPTIMIZE__)) || defined (__DELAY_BAC
+ 154:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 4e3) * __ms;
+ 155:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	if (__tmp < 1.0)
+ 156:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 		__ticks = 1;
+ 157:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	else if (__tmp > 65535)
+ 158:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 	{
+ 159:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 		//	__ticks = requested delay in 1/10 ms
+ 160:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 		__ticks = (uint16_t) (__ms * 10.0);
+ 161:/usr/lib/gcc/avr/4.6.1/../../../../avr/include/util/delay.h **** 		while(__ticks)
+ 454               		.stabn	68,0,162,.LM38-.LFBB6
+ 455               	.LM38:
+ 456 00c2 01F4      		brne .L14
+ 457 00c4 00C0      		rjmp .L15
+ 458               	.LBE27:
+ 459               	.LBE28:
+ 460               	.LBE29:
+ 461               		.size	main, .-main
+GAS LISTING /tmp/ccezdhH7.s 			page 17
+
+
+ 462               		.stabs	"del1:(0,57)",128,0,111,1
+ 463               		.stabs	"detecteurligne:(0,73)",128,0,112,2
+ 464               		.stabn	192,0,0,.LBB18-.LFBB6
+ 465               		.stabn	224,0,0,.LBE18-.LFBB6
+ 466               		.stabs	"del1:(0,57)",128,0,111,1
+ 467               		.stabs	"detecteurligne:(0,73)",128,0,112,2
+ 468               		.stabn	192,0,0,.LBB29-.LFBB6
+ 469               		.stabn	224,0,0,.LBE29-.LFBB6
+ 470               	.Lscope6:
+ 471               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 472               		.stabd	78,0,0
+ 473               	.global	maligne
+ 474               	.global	maligne
+ 475               		.section .bss
+ 476               		.type	maligne, @object
+ 477               		.size	maligne, 1
+ 478               	maligne:
+ 479 0000 00        		.skip 1,0
+ 480               		.stabs	"maligne:G(0,78)",32,0,67,0
+ 481               		.text
+ 482               		.stabs	"",100,0,0,.Letext0
+ 483               	.Letext0:
+GAS LISTING /tmp/ccezdhH7.s 			page 18
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.cpp
+     /tmp/ccezdhH7.s:2      *ABS*:0000003f __SREG__
+     /tmp/ccezdhH7.s:3      *ABS*:0000003e __SP_H__
+     /tmp/ccezdhH7.s:4      *ABS*:0000003d __SP_L__
+     /tmp/ccezdhH7.s:5      *ABS*:00000000 __tmp_reg__
+     /tmp/ccezdhH7.s:6      *ABS*:00000001 __zero_reg__
+     /tmp/ccezdhH7.s:83     .text:00000000 _Z6setBitPVhh
+     /tmp/ccezdhH7.s:116    .text:00000018 _Z8unsetBitPVhh
+     /tmp/ccezdhH7.s:158    .text:00000046 _Z11initialiserv
+     /tmp/ccezdhH7.s:212    .text:00000064 __vector_19
+     /tmp/ccezdhH7.s:241    .text:00000078 __vector_6
+     /tmp/ccezdhH7.s:271    .text.startup:00000000 main
+     /tmp/ccezdhH7.s:478    .bss:00000000 maligne
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
+_ZN14DetecteurLigneC1EPVhS1_hhh
+_ZN14DetecteurLigne16getStatutCourantEv
+_Z10ajusterPWMhh
+_ZN3del7allumerEh
+_ZN3del9clignoterEhh

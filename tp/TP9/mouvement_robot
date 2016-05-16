@@ -1,0 +1,59 @@
+dbt;
+
+mav 125;
+att 120;
+mar;
+trd;
+mav 125;
+att 120;	
+mar;	
+trd;
+mav 125;				// faire un carre en tournant a droite   (a modifier selon l'impact des att et trd sur mav)
+att 120;
+mar;
+trd;
+mav 125;
+att 120;
+mar;
+
+
+dbc 4;
+dal 1;
+att 10;				// clignotement des del
+det 1;
+att 10;
+fbc;
+
+
+mav 125;
+att 120;
+mar;
+trg;
+mav 125;
+att 120;
+mar;
+trg;				// faire un carre en tournant a gauche
+mav 125;
+att 120;
+mar;
+trg;
+mav 125;
+att 60;
+mar;
+att 60;
+mre 125;
+att 120;
+mar;
+
+dbc 1;
+sgo 70;
+att 5;
+sgo 65;				// bip de fin de routine
+att 5;
+sgo 60;
+att 5;
+sar;
+fbc;
+
+fin;
+
